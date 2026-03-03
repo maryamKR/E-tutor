@@ -63,3 +63,58 @@
 
 
 }
+
+
+
+.btn-sm {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.btn-md {
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.btn-lg {
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.btn-no-ic{
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.btn-right-ic{
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.btn-left-ic{
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+
+.btn-nm{
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.btn-hr{
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.btn-de{
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.form-normal{
+    width: 312px;
+    height: 48px;
+    border: 1px;
+    border-color: #E9EAF0;
+}
