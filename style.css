@@ -392,11 +392,13 @@ p {
     box-shadow:0 2px 4px rgba(0,0,0,0.1);
     background-color: var(--gray-scale-900);
     padding:0 32px;
+    height: 52px;
 }
 .nav-eng{
     display:flex;
     align-items:center;
     gap:16px;
+    color:var(--gray-scale-400);
 }
 
 .under-nav {
@@ -407,4 +409,5 @@ p {
 .links a{
     color:var(--gray-scale-500);
     padding: 16px;
+
 }
