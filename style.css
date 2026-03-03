@@ -104,6 +104,11 @@ p {
 .btn-lg {
     padding-right: 32px;
     padding-left: 32px;
+    font-family: "inter" sans-serif;
+ font-weight: 600;
+ font-size: 18px;
+ line-height: 56px;
+ letter-spacing: -1%;
 }
 
 .btn-no-ic{
@@ -393,4 +398,8 @@ p {
   display: flex;
   justify-content: space-between;
   padding:0 32px;
+}
+
+.right-side, .left-side {
+  display: flex;
 }
