@@ -94,6 +94,16 @@ button {
     border: none;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    
+}
+
 .heading {
     margin-bottom: 40px;
     text-align: center;
@@ -236,6 +246,12 @@ button {
     padding: 4px 6px;
     color: var(--Success-700);
     background: var(--Success-100);
+}
+
+.tag-gray-100 {
+    padding: 4px 6px;
+    background-color: var(--gray-scale-50);
+    color: var(--gray-scale-900);
 }
 
 
@@ -584,6 +600,7 @@ button {
     gap: 12px;
 }
 
+
 /* Hero Section*/
 
 .hero-section {
@@ -622,6 +639,88 @@ button {
     left: 1020px;
 }
 
+/* Categorey */
+
+.category {
+  padding: 80px 0;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+
+.card {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.icon-box {
+  width: 64px;
+  height: 64px;
+  background-color: white; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.category-icon img{
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.card-label     { background-color: var(--secondary-100); }
+.card-business  { background-color: var(--Success-100); }
+.card-finance   { background-color: var(--Warning-100); }
+.card-it        { background-color: var(--Danger-100); }
+
+.card-personal .icon-box { background-color: var(--primary-500); }
+.card-personal { background-color: var(--primary-100); }
+.card-office    { background-color: var(--gray-scale-50); }
+.card-marketing { background-color: var(--secondary-100); }
+.card-photo     { background-color: var(--gray-scale-50); }
+
+.card-lifestyle { background-color: var(--Warning-100); }
+.card-design    { background-color: var(--primary-100); }
+.card-health    { background-color: var(--Success-100); }
+.card-music     { background-color: var(--Warning-100); }
+
+.info h3 {
+    color: #1D2026;
+    margin-bottom: 8px; 
+}
+
+.info p {
+    color: #6E7485; 
+}
+
+.footer-category {
+  display: flex;
+  gap: 12px;
+  text-align: center;
+  margin-top: 40px;
+  color: var(--gray-scale-600);
+  justify-content: center;
+}
+
+.footer-category a {
+  color: #FF6636;
+}
+
 /* Best Selling */
 
 .best-selling {
@@ -636,10 +735,6 @@ button {
     gap: 25px;
 }
 
-.container-course {
-    max-width: 1320px;
-    margin: 0 auto;
-}
 
 .course {
     background-color: white;
@@ -687,3 +782,151 @@ button {
     background-color: var(--gray-scale-100);
 }
 
+.feature {
+    padding: 82px 80px;
+    max-width: 1480px;
+    margin: 0 auto;
+    border: 1px solid var(--gray-scale-100);
+}
+
+.feat-title p {
+    max-width: 424px;
+}
+
+.feat-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+}
+
+.feature-row {
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 26px;
+    
+}
+
+.card-feat {
+    display: flex;
+    border: 1px solid var(--gray-scale-100);
+    width: auto;
+}
+
+.img-feat {
+    width: 220px;
+    object-fit: cover;
+}
+
+.card-feat-content {
+    padding: 16px 24px;
+}
+
+.feat-head {
+    margin-bottom: 17px;
+}
+
+.feat-head-content {
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+    margin-bottom: 8px;
+}
+
+.card-feat p,
+.feat-price span:first-child {
+    color: var(--gray-scale-900);
+}
+
+.feat-price  span:last-child {
+    color: var(--gray-scale-400);
+    text-decoration: line-through; 
+}
+
+.feat-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+
+.instructor {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.instructor img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.instructor span {
+    color: var(--gray-scale-700);
+}
+
+.feat-rating{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.feat-rating .rt{
+    color: var(--gray-scale-900);
+}
+
+.feat-rating .nb{
+    color: var(--gray-scale-500);
+}
+
+.feat-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+.nb-student {
+    color: var(--gray-scale-900);
+}
+
+.students {
+    color: var(--gray-scale-500);
+}
+
+.flex-aling-center {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.orange {
+    color: var(--primary-500);
+}
+
+
+
+/* Recently */
+
+
+.recently {
+    padding: 80px 0;
+}
+
+.recently-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.recently-img {
+    max-width: 312px;
+}
+
+.recently button {
+    margin-top: 40px;
+}
+
+button img {
+    margin-left: 12px;
+}
