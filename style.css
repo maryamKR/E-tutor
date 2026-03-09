@@ -92,6 +92,7 @@ p {
 
 button {
     border: none;
+    cursor: pointer;
 }
 
 .text-center {
@@ -99,9 +100,11 @@ button {
 }
 
 .container {
-    max-width: 1320px;
-    margin: 0 auto;
-    
+   width: 100%;          
+  max-width: 1320px;   
+  margin: 0 auto;
+  padding-left: 16px; 
+  padding-right: 16px;
 }
 
 .heading {
@@ -142,6 +145,7 @@ button {
 .primary-primary {
     background-color: var(--primary-500);
     color: white;
+    transition: transform 0.3s ease;
 }
 
 .primary-primary:hover {
@@ -157,6 +161,7 @@ button {
 .primary-secondary {
     background-color: var(--secondary-500);
     color: white;
+    transition: transform 0.3s ease;
 }
 
 .primary-secondary:hover {
@@ -173,6 +178,7 @@ button {
 .primary-gray {
     background-color: var(--gray-scale-900);
     color: white;
+    transition: transform 0.3s ease;
 }
 
 .primary-gray:hover {
@@ -188,6 +194,7 @@ button {
 .primary-gray-2 {
     background-color: var(--gray-scale-800);
     color: white;
+    transition: transform 0.3s ease;
 }
 
 .primary-gray-2:hover {
@@ -198,6 +205,7 @@ button {
 .secondary-primary {
     background-color: var(--primary-100);
     color: var(--primary-500);
+    transition: transform 0.3s ease;
 }
 
 .secondary-primary:hover {
@@ -213,6 +221,7 @@ button {
 .secondary-secondary {
     background-color: var(--secondary-100);
     color: var(--secondary-500);
+    transition: transform 0.3s ease;
 }
 
 .secondary-secondary:hover {
@@ -228,6 +237,7 @@ button {
 .secondary-gray {
     background-color: var(--gray-scale-50);
     color: var(--gray-scale-900);
+    transition: transform 0.3s ease;
 }
 
 .secondary-gray:hover {
@@ -237,7 +247,7 @@ button {
 
 .secondary-gray:disabled {
     background-color: var(--gray-scale-50);
-    color: var(--gray-scale-300);;
+    color: var(--gray-scale-300);
 }
 
 .tag-primary-100 {
@@ -264,39 +274,8 @@ button {
     color: var(--gray-scale-900);
 }
 
-
-.btn-no-ic{
-    padding-right: 24px;
-    padding-left: 24px;
-}
-
-.btn-right-ic{
-    padding-right: 24px;
-    padding-left: 24px;
-}
-
-.btn-left-ic{
-    padding-right: 24px;
-    padding-left: 24px;
-}
-
-
-.btn-nm{
-    padding-right: 24px;
-    padding-left: 24px;
-}
-
-.btn-hr{
-    padding-right: 24px;
-    padding-left: 24px;
-}
-
-.btn-de{
-    padding-right: 24px;
-    padding-left: 24px;
-}
-
 .form-normal{
+    background: transparent;
     height: 48px;
     border: 1px solid var(--gray-scale-100);
     padding: 12px 18px;
@@ -567,6 +546,12 @@ button {
 .links a{
     color:var(--gray-scale-500);
     padding: 16px;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.links a:hover{
+    border-top: 2px solid var(--primary-500);
 }
 
 .right-side, .left-side {
@@ -668,7 +653,7 @@ button {
   align-items: center;
   gap: 20px;
   border-radius: 4px;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
   cursor: pointer;
 }
 
@@ -728,17 +713,19 @@ button {
 }
 
 .footer-category a {
-  color: #FF6636;
+  color: var(--primary-500);
 }
 
 /* Best Selling */
 
 .best-selling {
     background-color: var(--gray-scale-50);
-    padding: 80px 0;
+    height: 1179px !important;
+    padding-top: 80px;
 }
 
-.row-course {
+
+.course-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -748,6 +735,13 @@ button {
 
 .course {
     background-color: white;
+    transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.course:hover {
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .course > img {
@@ -797,6 +791,15 @@ button {
     max-width: 1480px;
     margin: 0 auto;
     border: 1px solid var(--gray-scale-100);
+    background-color: white;
+}
+
+.courses-section > .best-selling + .feature {
+  margin-top: -253px;
+}
+
+.tst {
+    margin-bottom: 82px;
 }
 
 .feat-title p {
@@ -809,19 +812,24 @@ button {
     margin-bottom: 42px;
 }
 
-.feature-row {
+.feature-grid {
     display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 24px;
     row-gap: 26px;
-    
 }
 
 .card-feat {
     display: flex;
     border: 1px solid var(--gray-scale-100);
     width: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card-feat:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .img-feat {
@@ -837,10 +845,14 @@ button {
     margin-bottom: 17px;
 }
 
+.card-feat:hover p {
+    color: var(--primary-500);
+}
+
 .feat-head-content {
     display: flex;
     justify-content: space-between;
-        align-items: center;
+    align-items: center;
     margin-bottom: 8px;
 }
 
@@ -923,14 +935,24 @@ button {
     padding: 80px 0;
 }
 
-.recently-row {
+.recently-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
+.recently-course {
+    border: 1px solid var(--gray-scale-100);
+    background-color: white;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.recently-course:hover {
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
 
 .recently-img {
-    max-width: 312px;
+    width: 312px;
 }
 
 .recently button {
@@ -990,7 +1012,7 @@ button img {
 
 .footer-main {
     display: grid;
-    grid-template-columns: 424px 200px 200px 200px 200px;
+    grid-template-columns: 424px auto auto auto auto;
     gap: 24px;
     padding: 80px 0;
 }
@@ -1016,6 +1038,7 @@ button img {
     display: flex; 
     align-items: center; 
     justify-content: center;
+    transition: transform 0.4s ease;
 }
 .social-links img { 
     width: 18px; 
@@ -1035,6 +1058,7 @@ button img {
 
 .col-links ul li a { 
     color: var(--gray-scale-500); 
+    transition: transform 0.4s ease;
 }
 
 .col-links ul li a:hover { 
@@ -1095,8 +1119,6 @@ button img {
 }
 
 .lang-box {
-    background: transparent;
-    padding: 12px 18px;
     border: 1px solid var(--gray-scale-700);
     cursor: pointer;
     color: white;
